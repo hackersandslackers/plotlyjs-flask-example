@@ -2,14 +2,16 @@
 <html>
 
 <head>
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
+  <div class="grid">
     {% for id in ids %}
-        <h3>{{id}}</h3>
-        <div id="{{id}}"></div>
+        <div class="elem" id="{{id}}"></div>
     {% endfor %}
+  </div>
 
 </body>
 
